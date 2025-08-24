@@ -1,0 +1,14 @@
+[package]
+name = "aptstream"
+version = "1.0.0"
+
+[addresses]
+AptStream = "0x3575f6f198ff621e6e62f0cf0b6b6514873fb1cdd7e2236564f38dc8517a717d"
+
+[dependencies]
+AptosFramework = { git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/framework/aptos-framework" }
+
+
+[dev-addresses]
+aptstream = "0xA11CE"
+aptos move publish --named-addresses AptStream=0x3575f6f198ff621e6e62f0cf0b6b6514873fb1cdd7e2236564f38dc8517a717d --profile default
